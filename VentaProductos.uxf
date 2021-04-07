@@ -1,0 +1,47 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>394</x><y>35</y><w>210</w><h>60</h></coordinates><panel_attributes>Comercio
+--
++ cantServiciosSimples(int): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>305</y><w>220</w><h>110</h></coordinates><panel_attributes>Insumo
+--
+- nombre: String
+- porcentaje_ganancia: double
+- precio: double
+--
++ sumarPorcentaje(double, int): double
++ montoTotalFacturado(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>494</x><y>325</y><w>240</w><h>110</h></coordinates><panel_attributes>/Servicio/
+--
+- cant_horas: int
+- precio: double
+--
+/+ calcularPrecio(): double/
++ sumarPorcentaje(double, int): double
++ montoTotalFacturado(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>384</x><y>485</y><w>220</w><h>70</h></coordinates><panel_attributes>Armado
+--
+
+--
++ calcularPrecio(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>614</x><y>485</y><w>290</w><h>110</h></coordinates><panel_attributes>Reparacion
+--
+- dificultad: int
+_AUMENTO_DIFICULTAD int = 3_
+_AUMENTO_PRECIO_PORCENTAJE int = 25_
+
+--
++ calcularPrecio(): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>174</x><y>455</y><w>120</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Tipo
+--
++ PERIFERICO,
++ HARDWARE,
++ LIMPIEZA</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>624</x><y>425</y><w>80</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;60</additional_attributes></element><element><id>Relation</id><coordinates><x>484</x><y>425</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>405</y><w>60</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>85</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- historial</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>155</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Facturable/
+--
+_*+ IVA int: 21*_
+--
+/+ montoTotalFacturado(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>235</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;70;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>135</y><w>230</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Matematica/
+--
+_+ sumarPorcentaje(double, int): double_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>185</y><w>270</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;100;250;140</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>240</y><w>70</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>50;10;14;70</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>180</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;14;125</additional_attributes></element></diagram>
